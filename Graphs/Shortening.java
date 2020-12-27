@@ -1,16 +1,19 @@
 import java.util.*;
 
-class Edge{
-    int start, end, dist;
-    public Edge(int start, int end, int distance){
-        this.start = start;
-        this.end = end;
-        this.dist = distance;
-    }
-}
-
 
 public class Shortening {
+    
+    class Edge {
+
+        int start, end, dist;
+
+        public Edge(int start, int end, int distance) {
+            this.start = start;
+            this.end = end;
+            this.dist = distance;
+        }
+    }
+    
     ArrayList<Edge> edges;
     int n;
     public Shortening(int n) {
